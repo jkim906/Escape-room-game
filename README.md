@@ -1,8 +1,32 @@
-# Escape-room-game
-Designed an escape room game. Programmed using Java and JavaFX.
 
-My project of making an escape room game remains private at this time as the semester isn't currently
-over and the university wants the project to be private until we have finished the semester so it doesn't create any academic misconduct issues.
-I will make sure this game gets uploaded as soon as possible.
+# SOFTENG 206 - EscAIpe Room
 
-Should you require further clarification or want to play the game, kindly do not hesitate to inquire.
+## To setup OpenAI's API
+
+- add in the root of the project (i.e., the same level where `pom.xml` is located) a file named `apiproxy.config`
+- put inside the credentials that you received from no-reply@digitaledu.ac.nz (put the quotes "")
+  `    email: “UPI@aucklanduni.ac.nz"
+    apiKey: “YOUR_KEY”
+   `
+  these are your credentials to invoke the OpenAI GPT APIs
+
+## To setup codestyle's API
+
+- add in the root of the project (i.e., the same level where `pom.xml` is located) a file named `codestyle.config`
+- put inside the credentials that you received from gradestyle@digitaledu.ac.nz (put the quotes "")
+  `    email: “UPI@aucklanduni.ac.nz"
+    accessToken: “YOUR_KEY”
+   `
+  these are your credentials to invoke gradestyle
+
+## To run the game
+
+`./mvnw clean javafx:run`
+
+## To debug the game
+
+`./mvnw clean javafx:run@debug` then in VS Code "Run & Debug", then run "Debug JavaFX"
+
+## To run codestyle
+
+`./mvnw clean compile exec:java@style`
